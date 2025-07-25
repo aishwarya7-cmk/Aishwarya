@@ -18,3 +18,10 @@ if is_prime(num):
 else:
     # If the number is not prime, print this message
     print(f"{num} is not a prime number.")
+    
+# Addition of prime numbers in a given range
+prime_sum = 0
+for i in range(2, num + 1):
+    if is_prime(i):
+        prime_sum += i
+print(f"Sum of prime numbers from 2 to {num} is {prime_sum}.")
